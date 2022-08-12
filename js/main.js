@@ -37,4 +37,15 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 // Remove Mobile Menu END
 
+// Change Background Navbar START
+
+const scrollHeader = () => {
+    const header = document.getElementById('header');
+    this.scrollY >= 50 ? header.classList.add('bg-header') : header.classList.remove('bg-header');
+}
+
+window.addEventListener('scroll', scrollHeader);
+
+// Change Background Navbar END
+
 // Menu END
